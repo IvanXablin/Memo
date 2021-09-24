@@ -8,6 +8,9 @@
         <ShellContent Title="Notes"
                       Icon="icon_feed.png"
                       ContentTemplate="{DataTemplate views:NotesPage}" />
+        <ShellContent Title="Todo"
+                      Icon="icon_feed.png"
+                      ContentTemplate="{DataTemplate views:TodoListPage}" />
         <ShellContent Title="About"
                       Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:AboutPage}" />
