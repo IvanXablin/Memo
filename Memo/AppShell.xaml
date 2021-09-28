@@ -6,13 +6,13 @@
     <!-- Display a bottom tab bar containing two tabs -->
     <TabBar>
         <ShellContent Title="Notes"
-                      Icon="icon_feed.png"
+                      Icon="note.png"
                       ContentTemplate="{DataTemplate views:NotesPage}" />
         <ShellContent Title="Todo"
-                      Icon="icon_feed.png"
+                      Icon="todo_list.png"
                       ContentTemplate="{DataTemplate views:TodoListPage}" />
         <ShellContent Title="About"
-                      Icon="icon_about.png"
+                      Icon="about.png"
                       ContentTemplate="{DataTemplate views:AboutPage}" />
     </TabBar>
 </Shell>

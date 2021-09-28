@@ -6,17 +6,17 @@
    
     <StackLayout Margin="20"
                  VerticalOptions="StartAndExpand">
-        <Label Text="Name" />
+        <Label Text="Title" />
         <Entry Text="{Binding Name}" />
         <Label Text="Notes" />
         <Entry Text="{Binding Notes}" />
         <Label Text="Done" />
         <Switch IsToggled="{Binding Done}" />
         <Button Text="Save"
-                Clicked="OnSaveClicked" />
+                Clicked="OnSaveClicked" CornerRadius="26" />
         <Button Text="Delete"
-                Clicked="OnDeleteClicked" />
+                Clicked="OnDeleteClicked" CornerRadius="26" />
         <Button Text="Cancel"
-                Clicked="OnCancelClicked" />
+                Clicked="OnCancelClicked" CornerRadius="26" />
     </StackLayout>
 </ContentPage>

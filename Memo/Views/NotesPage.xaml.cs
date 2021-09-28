@@ -37,5 +37,7 @@ namespace Memo.Views
                 await Shell.Current.GoToAsync($"{nameof(NoteEntryPage)}?{nameof(NoteEntryPage.ItemId)}={note.ID.ToString()}");
             }
         }
+
+
     }
 }

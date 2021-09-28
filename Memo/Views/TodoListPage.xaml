@@ -7,12 +7,14 @@
         <ToolbarItem Text="+" Clicked="OnItemAdded">
             <ToolbarItem.IconImageSource>
                 <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="Android, UWP"
+                    <On Platform="Android"
                         Value="plus.png" />
                 </OnPlatform>
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
+
+
     <ListView x:Name="listView"
               Margin="20"
               ItemSelected="OnListItemSelected">
@@ -24,7 +26,8 @@
                                  HorizontalOptions="FillAndExpand">
                         <Label Text="{Binding Name}"
                                VerticalTextAlignment="Center"
-                               HorizontalOptions="StartAndExpand" />
+                               HorizontalOptions="StartAndExpand"
+                               FontSize="Title"/>
                         <Image Source="check.png"
                                HorizontalOptions="End"
                                IsVisible="{Binding Done}" />

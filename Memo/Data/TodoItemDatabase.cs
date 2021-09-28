@@ -2,12 +2,17 @@
 using System.Threading.Tasks;
 using SQLite;
 using Memo.Models;
+using Xamarin.Forms;
+using System.Linq;
+using System.Collections.ObjectModel;
+
 
 namespace Memo.Data
 {
     public class TodoItemDatabase
     {
         static SQLiteAsyncConnection Database;
+
 
         public static readonly AsyncLazy<TodoItemDatabase> Instance = new AsyncLazy<TodoItemDatabase>(async () =>
         {
@@ -52,5 +57,6 @@ namespace Memo.Data
         {
             return Database.DeleteAsync(item);
         }
+
     }
 }

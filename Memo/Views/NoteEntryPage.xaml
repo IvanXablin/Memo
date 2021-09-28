@@ -3,18 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Memo.Views.NoteEntryPage"
              Title="Note Entry">
-    <!-- Layout children vertically -->
+    
     <StackLayout Margin="20">
         <Editor Placeholder="Enter your note"
                 Text="{Binding Text}"
-                HeightRequest="100" />
-        <!-- Layout children in two columns -->
+                HeightRequest="350" />
         <Grid ColumnDefinitions="*,*">
             <Button Text="Save"
-                    Clicked="OnSaveButtonClicked" />
+                    Clicked="OnSaveButtonClicked" CornerRadius="50"/>
             <Button Grid.Column="1"
                     Text="Delete"
-                    Clicked="OnDeleteButtonClicked"/>
+                    Clicked="OnDeleteButtonClicked" CornerRadius="50"/>
         </Grid>
     </StackLayout>
 </ContentPage>
