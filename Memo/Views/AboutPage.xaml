@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Memo.Views.AboutPage"
              Title="About">
+    
     <Grid RowDefinitions="Auto,*">
         <StackLayout Grid.Row="1"
                      Margin="20"
@@ -15,7 +16,7 @@
                                   FontAttributes="Bold"
                                   FontSize="22" />
                             <Span Text="                                  
-                                  Release v1.2" />
+                                  Release" />
                         </FormattedString.Spans>
                     </FormattedString>
                 </Label.FormattedText>

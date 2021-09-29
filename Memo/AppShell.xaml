@@ -3,11 +3,11 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:Memo.Views"
        x:Class="Memo.AppShell">
-    <!-- Display a bottom tab bar containing two tabs -->
+
     <TabBar>
         <ShellContent Title="Notes"
                       Icon="note.png"
-                      ContentTemplate="{DataTemplate views:NotesPage}" />
+                      ContentTemplate="{DataTemplate views:NotesPage}"/>
         <ShellContent Title="Todo"
                       Icon="todo_list.png"
                       ContentTemplate="{DataTemplate views:TodoListPage}" />
